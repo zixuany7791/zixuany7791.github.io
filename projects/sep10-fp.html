@@ -11,7 +11,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
+    <link href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism.css" rel="stylesheet" /> 
 </head>
 
 <body>
@@ -46,15 +46,21 @@
             <h1 class="margin text-center">Freedom Project</h1>
             <p>The “Freedom Project” for SEP10 is all about researching the topic that you liked and practicing brainstorming technologies for future needs.</p>
             <p>For my project, I am making an informational website that will shows summaries of some technologies that are used in construction using Jekyll and Bootstrap.</p>
-            <h4>Challenges:</h4>
-            <p>Since I decided to use Jekyll as my tool to make the website, I will have to consider how to use Jekyll well or else it is no point for choosing Jekyll. What I like about Jekyll is that Jekyll can organize the code very well by having a layout and you just write stuff into it and you can also convert markdown codes into html. </p>
-            <a href="#">Link about the project</a><br>
+            <p>One of the challenges I have is that since I never have made a sidebar before, I will have to think how to make it. I found an example on the internet on how to make it, but it doesn’t have the scrollspy effect so I have to add a div element for the entire page for the scrollspy to work. </p>
+            <pre><code class="language-html">
+                <div class="container-fluid" data-bs-spy="scroll" data-bs-target="sidebar" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0">
+            </code></pre>
+            <p>Result:</p>
+            
+            <p>One takeaway I have is to have better time management. I have spent too much time trying to figure out how to have two scrollspy because I want to have two different navigation tools. One for small screen sizes and one for bigger screens. But because in order for scrollspy to work, you need each section to have an id and have all the navigation tools to have the id on the hyperlink, this apparently led to scrollspy not working. After a long time playing around with liquid and javascript and still couldn’t figure out why it wouldn’t work, I am falling behind the schedule and I don’t have my presentation and elevator pitch done on time. Although Mr. Mueller told me to finish the presentation and elevator pitch first then come back, I didn’t really listen to it completely and thought that I would be fine. </p>
+            <p>After finishing this freedom project, I would like to discover more about javascript so next time I have a better knowledge and might less time overcoming the challenge.</p>
+
 
             <!--EXAMPLE OF PREVIEW LINK-->
-            <a href="http://zixuany7791.github.io/sep10-freedom-project">Preview</a><br>
+            <a href="https://docs.google.com/document/d/1qlTz7HOg6FFl95kpYVH2vxecSX8-xnhlDqXRg1MNzR0/edit">Blog</a><br>
             <!--EXAMPLE OF GITHUB LINK-->
-            <a href="http://github.com/zixuany7791/sep10-freedom-project">Github</a><br>
-
+<!--             <a href="http://github.com/zixuany7791/sep10-freedom-project">Github</a><br>
+ -->
             <img src="../img/avatar.png" class="img-fluid project-img">
 
 
@@ -82,7 +88,9 @@
         <a href="https://hstatsep.github.io" target="_blank"><img src="https://hstatsep.github.io/img/hstatsep-logo-small.png" id="sep"></a>
     </footer>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-core.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/normalize-whitespace/prism-normalize-whitespace.min.js"></script>
     <script src="../script.js"></script>
 </body>
 
